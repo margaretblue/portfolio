@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '2.2.0'
 gem 'jbuilder', '~> 1.2'
+gem 'minitest-rails'
 
 group :doc do
   gem 'sdoc', require: false
