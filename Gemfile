@@ -10,6 +10,10 @@ gem 'turbolinks', '2.2.0'
 gem 'jbuilder', '~> 1.2'
 gem 'minitest-rails'
 
+group :test do
+  gem 'minitest-rails-capybara'
+end
+
 group :doc do
   gem 'sdoc', require: false
 end
