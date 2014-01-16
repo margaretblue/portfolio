@@ -3,6 +3,7 @@ require "test_helper"
 feature "Editing A Post" do
   scenario "submit updates to an existing post" do
     #given an existing post
+    #fixtures instantiated by default socan remove Post.create
     post = Post.create(title: "Becoming a Software Engineer",
       body: "Means striving for excellence.")
     #post author goes to  existing Post detail #show
