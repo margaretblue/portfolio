@@ -12,6 +12,7 @@ gem 'minitest-rails'
 
 group :test do
   gem 'minitest-rails-capybara'
+  gem 'turn'
 end
 
 group :doc do
