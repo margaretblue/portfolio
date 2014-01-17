@@ -14,8 +14,14 @@ gem 'foundation-rails', github: 'codefellows/foundation-rails'
 group :test do
   gem 'minitest-rails-capybara'
   gem 'turn'
+  gem 'launchy'
 end
 
 group :doc do
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem 'rails_12factor'
+  gem 'pg'
 end
