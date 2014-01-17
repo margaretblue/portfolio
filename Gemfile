@@ -23,7 +23,10 @@ group :doc do
 end
 
 group :development do
-  gem 'rails_12factor'
   gem 'sqlite3', '1.3.8'
+end
+
+group :production do
+  gem 'rails_12factor'
   gem 'pg'
 end
