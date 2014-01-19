@@ -11,6 +11,7 @@ gem 'turbolinks', '2.2.0'
 gem 'jbuilder', '~> 1.2'
 gem 'minitest-rails'
 gem 'foundation-rails', github: 'codefellows/foundation-rails'
+gem 'foundation-icons-sass-rails'
 
 group :test do
   gem 'minitest-rails-capybara'

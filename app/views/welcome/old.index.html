@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>Margaret Morris | Software Engineer</title>
+
+
+<style>
+<style type="text/css">
+
+
+html, body
+{
+  height: 100%;
+}
+
+
+body
+{
+  margin: 0px;
+  padding: 0px;
+  background: #ededed;
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+
+}
+
+h1, h2, h3
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+/** CONTAINER */
+
+
+.container
+{
+  width: 1100px;
+  margin: 0px auto;
+}
+
+.clearfix
+{
+  clear: both;
+}
+
+
+
+
+
+/** HEADER */
+
+#header-wrapper
+{
+  overflow: hidden;
+  background: #3b3b3b;
+}
+
+#header
+{
+  overflow: hidden;
+  height: 150px;
+}
+
+/** LOGO */
+
+#logo
+{
+  float: left;
+  width: 400;
+}
+
+#logo h1 a
+{
+  display: block;
+  line-height: 150px;
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  font-size: 45px;
+  color: #FFFFFF;
+}
+
+/** MENU */
+
+#menu
+{
+  float: right;
+  width: 700px;
+}
+
+#menu ul
+{
+  float: right;
+  margin: 0px;
+  padding: 60px 0px 0px 0px;
+  list-style: none;
+  line-height: normal;
+}
+
+#menu li
+{
+  float: left;
+  margin-left: 10px;
+}
+
+#menu a
+{
+  display: block;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+#menu .active a
+{
+  background: #00d9a9;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+    #menu .active a:hover
+    {
+      background-color: #00a987;
+    }
+
+    #menu .active a:active
+    {
+      background-color: #20e1b6;
+    }
+
+
+#menu a:hover
+{
+  text-decoration: none;
+}
+
+
+
+/** PAGE */
+
+#page-wrapper
+{
+  overflow: hidden;
+  padding: 20px 0px;
+  background:#ededed ;
+}
+
+#page
+{
+  overflow: hidden;
+}
+
+
+
+
+
+/** CONTENT */
+
+
+
+#featured-wrapper
+{
+  overflow: hidden;
+  padding: 50px 0px;
+  border-top: 1px solid #E7E7E7;
+  text-align: center;
+}
+
+
+#featured header
+{
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/** BUTTON STYLING */
+
+.button
+{
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 10px 30px;
+  background: #20e1b6;
+  -moz-transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+  -o-transition: background-color .25s ease-in-out;
+  -ms-transition: background-color .25s ease-in-out;
+  transition: background-color .25s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 5px rgba(255,255,255, 1);
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+    .button:hover
+    {
+      background-color: #00ad87;
+    }
+
+    .button:active
+    {
+      background-color: #20e1b6;
+    }
+
+.button-alt
+{
+  background: #20e1b6;
+
+}
+
+    .button-alt:hover
+    {
+      background-color: #00ad87;
+    }
+
+    .button-alt:active
+    {
+      background-color: #FC3F68;
+    }
+
+.button-small
+{
+  margin: 5px 0px;
+  box-shadow: none;
+  font-size: 6px;
+  color: #FFFFFF;
+}
+
+
+/** Gallery */
+
+#content header
+{
+  display: block;
+  margin-bottom: 1px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #333333;
+}
+
+
+
+
+#two-column h3
+{
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#two-column img
+{
+  float: left;
+  margin-right: 30px;
+  padding: 5px;
+  background: #FFFFFF;
+  opacity: 0.8;
+}
+
+#two-column  a:hover img
+{
+  opacity: 0.9;
+}
+
+
+
+#two-column .box-style
+{
+  overflow: hidden;
+  padding: 30px 0px;
+}
+
+#two-column #tbox1
+{
+  float: left;
+  width: 500px;
+}
+
+#two-column #tbox2
+{
+  float: right;
+  width: 500px;
+}
+
+
+/** Third Section */
+
+#banner-wrapper
+{
+  overflow: hidden;
+  padding: 12px 0px 1px 0px;
+  background: #20e1b6;
+  text-align: center;
+  color: #fff;
+}
+
+#banner p
+{
+  letter-spacing: -1px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#banner strong
+{
+  font-weight: 400;
+}
+
+
+/** FOOTER */
+
+
+#footer-wrapper
+{
+  overflow: hidden;
+  padding: 35px 0px;
+  background: #444444;
+  border-top: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+}
+
+#footer
+{
+  overflow: hidden;
+  color: #B1B1B1;
+}
+
+#footer header
+{
+  margin-bottom: 2px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+#footer #fbox1
+{
+  float: left;
+  width: 700px;
+}
+
+#footer #fbox2
+{
+  float: right;
+  width: 300px;
+}
+
+#footer a
+{
+  color: #D0D0D0;
+}
+
+#footer .button-small
+{
+  color: #FFFFFF;
+}
+
+#copyright
+{
+  overflow: hidden;
+  padding: 3px 0px 3px 0px;
+  text-align: center;
+  color: #606060;
+}
+
+#copyright a
+{
+  color: #818181;
+}
+
+</style>
+
+
+
+</style>
+<link href='http://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+
+ </head>
+
+
+
+<body>
+
+
+
+  <div id="header-wrapper">
+  <div id="header" class="container">
+    <div id="logo">
+      <h1><a href="#">Margaret  Morris</a></h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="banner-wrapper">
+  <div id="banner" class="container">
+    <p>
+
+Full-Stack web engineer focused on test-driven development specializing in Ruby, Ruby on Rails, Javascript, HTML/CSS. Background in Electrical Engineering and Technical Product Management with a keen eye for product and strategy.
+</p>
+  </div>
+</div>
+
+<div id="page-wrapper">
+  <div id="page" class="container">
+    <div id="content">
+      <header>Portfolio</header>
+      <div id="two-column">
+        <div id="tbox1">
+          <div class="box-style"> <a href="#"><img src="images/screenshot01.jpg" width="140" height="105" alt="" /></a>
+            <h3>Project 1</h3>
+            <p>My first cool project. </p>
+            </div>
+          <div class="box-style"> <a href="#"><img src="images/screenshot02.jpg" width="140" height="105" alt="" /></a>
+            <h3>Project 2</h3>
+            <p>My second cool project. </p>
+            </div>
+        </div>
+       <!--  <div id="tbox2">
+          <div class="box-style"> <a href="#"><img src="images/screenshot03.jpg" width="140" height="105" alt="" /></a>
+            <h3>Project 3</h3>
+            <p>Another cool project </p>
+            </div>
+          <div class="box-style"> <a href="#"><img src="images/screenshot04.jpg" width="140" height="105" alt="" /></a>
+            <h3>Project 4</h3>
+            <p>Another cool project </p>
+          </div> -->
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="footer-wrapper">
+  <div id="footer" class="container">
+    <div id="fbox1">
+      <header>About Me</header>
+      <p>Web Developer, Software Engineer </p>
+       </div>
+    <div id="fbox2">
+      <header>Get In Touch</header>
+      <p>
+margaretblue@gmail.com
+</p>
+    </div>
+  </div>
+</div>
+<div id="copyright" class="container">
+  <p>Margaret Morris(c) 2014</p>
+</div>
+
+
+ </body>
+</html>
