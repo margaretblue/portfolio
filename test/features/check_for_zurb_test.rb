@@ -5,7 +5,7 @@ feature "CheckForZurb" do
     #GIVEN a page, WHEN the user visits
     visit root_path
     #THEN must have Zurb Foundation loaded
-    page.has_css?('columns')
+    assert page.has_css? '.columns'
     # save_and_open_page
   end
 end
