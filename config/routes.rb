@@ -1,8 +1,7 @@
 Portfolio::Application.routes.draw do
 
   root 'welcome#index'
-  resources :welcome
-  resources :posts
+  resources :welcome, :posts, :projects
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
