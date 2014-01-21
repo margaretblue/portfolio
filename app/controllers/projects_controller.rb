@@ -19,11 +19,15 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @project = Project.find(params[:id])
+    set_project
+    #replaces
+    #@project = Project.find(params[:id])
   end
 
   def edit
-    @project = Project.find(params[:id])
+    set_project
+    #replaces
+    #@project = Project.find(params[:id])
   end
 
   def update
@@ -39,6 +43,10 @@ private
 
   def project_params
     params.require(:project).permit(:name, :technologies_used)
+  end
+
+  def set_project
+    @project = Project.find(params[:id])
   end
 
 end
