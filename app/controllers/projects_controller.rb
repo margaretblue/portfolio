@@ -39,6 +39,12 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def destroy
+    set_project
+    @project.destroy
+    redirect_to projects_path, notice: 'Project was successfully deleted. Deleted.'
+  end
+
 private
 
   def project_params
