@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-
+  before_action :set_project, only:[:show, :edit, :destroy]
   def index
     @projects = Project.all
   end
@@ -19,28 +19,22 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    set_project
-    #replaces
-    #@project = Project.find(params[:id])
+    #set_project
   end
 
   def edit
-    set_project
-    #replaces
-    #@project = Project.find(params[:id])
+    #set_project
   end
 
   def update
     @project = Project.find(params[:id])
     if @project.update_attributes(project_params)
-      #flash.now[:notice] = "Project Success"
-      #redirect_to @project
       redirect_to @project, notice: 'Project was successfully updated. Success'
     end
   end
 
   def destroy
-    set_project
+    #set_project
     @project.destroy
     redirect_to projects_path, notice: 'Project was successfully deleted. Deleted.'
   end
