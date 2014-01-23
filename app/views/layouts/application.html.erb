@@ -30,6 +30,8 @@
         <a href="#blog">BLOG</a>
         <a href="#contact">CONTACT</a>
         <a href="#lolcommits">LOLCOMMITS</a>
+        <%= link_to "Sign Up", new_user_registration_path %>
+        <!-- <a href="#checking">CHECKING</a> -->
       </nav>
       <% flash.each do |key, value| %>
         <div class="alert-box round <%= flash_class(key) %>">

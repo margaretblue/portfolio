@@ -5,6 +5,7 @@ feature "As the site owner, I want to edit a project so that I can correct typos
     # Given an existing project
     visit edit_project_path(projects(:portfolio))
 
+
     # When I make changes
     fill_in "Name", with: "My Rad Portfolio"
     click_on "Update Project"
