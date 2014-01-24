@@ -8,6 +8,7 @@ feature "Editing A Post" do
       body: "Means striving for excellence.")
     #post author goes to  existing Post detail #show
     visit post_path(post)
+    test_sign_in
     #author clicks on "Edit"
     click_on('Edit')
     #form is filled with changed attribs

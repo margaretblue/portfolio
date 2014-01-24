@@ -8,6 +8,7 @@ feature "DeletingAPost" do
     #            body: "Means striving for excellence")
     #post author goes to Post Index Page
     visit posts_path
+    test_sign_in
     #post author clicks on delete link
     page.find("tbody tr:last").click_on "Destroy"
     #post is deleted and doesn't show up

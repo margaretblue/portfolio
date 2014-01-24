@@ -4,9 +4,8 @@ feature "Create A Post" do
   scenario "submit form data to create a new post" do
     #author goes to blank Post form
     visit new_post_path
-    #form is filled in with attribs Post(title, body)
-    #replace now that we have fixtures
-    #fill_in('Title', :with => 'Code Rails')
+    #need to sign in
+    test_sign_in
     fill_in('Title', :with => posts(:cr).title)
     #fill_in('Body', :with => 'This is how I learned to make Rails apps')
     fill_in('Body', :with => posts(:cr).body)
