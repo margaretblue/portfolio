@@ -1,7 +1,9 @@
 cr:
   title: Software Engineer
   body: This is how I learned web development!
+  author: test1
 
 http:
   title: Intro to HTTP
   body: It's all about the request-response cycle!
+  author: test1

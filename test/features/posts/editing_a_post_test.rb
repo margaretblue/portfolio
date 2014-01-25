@@ -4,11 +4,12 @@ feature "Editing A Post" do
   scenario "submit updates to an existing post" do
     #given an existing post
     #fixtures instantiated by default socan remove Post.create
+    visit root_path
+    test_sign_in
     post = Post.create(title: "Becoming a Software Engineer",
       body: "Means striving for excellence.")
     #post author goes to  existing Post detail #show
     visit post_path(post)
-    test_sign_in
     #author clicks on "Edit"
     click_on('Edit')
     #form is filled with changed attribs
