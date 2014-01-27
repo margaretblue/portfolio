@@ -15,12 +15,12 @@ feature "Create A Post" do
     page.text.must_include posts(:cr).title
     page.text.must_include('Post was successfully created')
     page.has_css? "#author"
-    page.text.must_include users(:test1).email #Use your fixture name here
-    page.text.must_have_content "Status: Unpublished"
+    page.text.must_include users(:author).email #Use your fixture name here
+    page.must_have_content "Status: Unpublished"
   end
   scenario "unauthenticated site visitors cannot visit new_post_path" do
     #When I visit the blog index page
-    visit posts_path
+    visit new_post_path
     page.must_have_content "You need to sign in or sign up before continuing"
   end
   scenario "unauthenticated site vistiors cannot see new post button" do
@@ -31,6 +31,7 @@ feature "Create A Post" do
   end
   scenario "authors cannot publish" do
     #GIVEN an author's account
+    visit root_path
     test_sign_in(:author)
 
     #When I visit the new page
@@ -42,6 +43,7 @@ feature "Create A Post" do
 
   scenario "editors can publish" do
     #Given an editor's account
+    visit root_path
     test_sign_in(:editor)
 
     #When I visit the new post page
