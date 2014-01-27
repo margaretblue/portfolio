@@ -14,10 +14,10 @@ SimpleCov.start 'rails'
 # Uncomment for awesome colorful output
 # require "minitest/pride"
 
-def test_sign_in
+def test_sign_in(role = :editor)
   click_on "Sign In"
-  #fill_in "Email", with: "test@example.com"
-  fill_in "Email", with: users(:test1).email
+  #fill_in "Email", with: users(:test1).email
+  fill_in "Email", with: users(role).email
   fill_in "Password", with: "password"
   click_on "Sign in"
 end
