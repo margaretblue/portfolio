@@ -8,16 +8,26 @@ class PostPolicy
 
   def publish?
     #@user.role == "editor"
-    @user.editor?
+    @user && @user.editor?
   end
 
-  # def create?
-  #    #what even is this?
-  #   @user.role == "author" || @user.role == "editor"
-  # end
+  def create?
+     #what even is this?
+    if @user
+      @user.role == "author" || @user.role == "editor"
+    end
+  end
 
-  # def update?
-  #   @user.editor? || @user.author?
-  # end
+  def update?
+    if @user
+      @user.editor? || @user.author?
+    end
+  end
+
+  def destroy?
+    if @user
+      @user.editor? || @user.author?
+    end
+  end
 
 end
