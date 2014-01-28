@@ -13,6 +13,7 @@ gem 'minitest-rails'
 gem 'foundation-rails', github: 'codefellows/foundation-rails'
 gem 'foundation-icons-sass-rails'
 gem 'devise'
+gem 'pundit'
 
 group :test do
   gem 'minitest-rails-capybara'
