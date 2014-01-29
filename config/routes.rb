@@ -3,6 +3,7 @@ Portfolio::Application.routes.draw do
   devise_for :users
   root 'welcome#index'
   resources :welcome, :posts, :projects
+  get 'showmine', to: 'posts#showmine'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

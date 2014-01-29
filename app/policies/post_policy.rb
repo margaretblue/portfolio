@@ -1,4 +1,4 @@
-class PostPolicy
+class PostPolicy < ApplicationPolicy
   attr_accessor :user, :post
 
   def initialize(user, post)

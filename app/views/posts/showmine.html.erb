@@ -1,4 +1,4 @@
-<h1>Listing posts</h1>
+<h1>My posts</h1>
 
 <table>
   <thead>
@@ -31,5 +31,4 @@
  <br>
 <% if current_user.present? %>
   <%= link_to 'New Post', new_post_path %>
-  <%= link_to 'View My Posts', showmine_path %>
 <% end %>

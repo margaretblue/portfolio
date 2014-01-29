@@ -14,6 +14,10 @@ class PostsController < ApplicationController
 
   end
 
+  def showmine
+    @posts = current_user.posts
+  end
+
   # GET /posts/new
   def new
     @post = Post.new

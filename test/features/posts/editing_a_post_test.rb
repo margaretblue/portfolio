@@ -2,17 +2,10 @@ require "test_helper"
 
 feature "Editing A Post" do
   scenario "submit updates to an existing post" do
-    #given an existing post
-    #fixtures instantiated by default socan remove Post.create
     visit root_path
     test_sign_in
-    #post = Post.create(title: "Becoming a Software Engineer",
-    #  body: "Means striving for excellence.")
-    #post author goes to  existing Post detail #show
     visit post_path(posts(:cr))
-    #author clicks on "Edit"
     click_on('Edit')
-    #form is filled with changed attribs
     fill_in('Title', :with => 'Becoming a Web Developer')
     click_on('Update Post')
     #newly updated post should be shown
@@ -20,4 +13,29 @@ feature "Editing A Post" do
     #confirmation should be shown
     page.must_have_content "Web Developer"
   end
+  scenario "author can submit updates to an existing post" do
+    visit root_path
+    test_sign_in(:author)
+    visit post_path(posts(:cr))
+    click_on('Edit')
+    fill_in('Title', :with => 'Becoming a Web Developer')
+    click_on('Update Post')
+    #newly updated post should be shown
+    page.must_have_content "Post was successfully updated"
+    #confirmation should be shown
+    page.must_have_content "Web Developer"
+  end
+  scenario "editor can submit updates to any existing post" do
+    visit root_path
+    test_sign_in(:editor)
+    visit post_path(posts(:cr))
+    click_on('Edit')
+    fill_in('Title', :with => 'Becoming a Web Developer')
+    click_on('Update Post')
+    #newly updated post should be shown
+    page.must_have_content "Post was successfully updated"
+    #confirmation should be shown
+    page.must_have_content "Web Developer"
+  end
+
 end
