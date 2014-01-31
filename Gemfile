@@ -15,6 +15,7 @@ gem 'foundation-icons-sass-rails'
 gem 'devise'
 gem 'pundit'
 gem 'figaro'
+gem 'omniauth-twitter'
 
 group :test do
   gem 'minitest-rails-capybara'
