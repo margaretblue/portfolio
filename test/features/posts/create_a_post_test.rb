@@ -1,7 +1,7 @@
 require "test_helper"
 
 feature "Create A Post" do
-  scenario "submit form data to create a new post" do
+  scenario "author can submit form data to create a new post" do
     #author goes to blank Post form
     visit root_path
     test_sign_in(:author)
