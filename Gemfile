@@ -14,12 +14,14 @@ gem 'foundation-rails', github: 'codefellows/foundation-rails'
 gem 'foundation-icons-sass-rails'
 gem 'devise'
 gem 'pundit'
+gem 'figaro'
 
 group :test do
   gem 'minitest-rails-capybara'
   gem 'turn'
   gem 'launchy'
   gem 'simplecov'
+  gem 'pry'
 end
 
 group :doc do
@@ -28,6 +30,7 @@ end
 
 group :development do
   gem 'sqlite3', '1.3.8'
+  gem 'pry'
 end
 
 group :production do
