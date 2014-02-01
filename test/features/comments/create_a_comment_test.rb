@@ -1,7 +1,7 @@
 require "test_helper"
 
 feature "Create A Comment" do
-  scenario "Site visitor can comment from a blog post page" do
+  scenario "Site visitors not logged into twitter/omniauth/linkedin" do
     visit post_path(posts(:cr))
     fill_in('Content', :with => comments(:comment1).content)
     fill_in('Author', :with => comments(:comment1).author)
