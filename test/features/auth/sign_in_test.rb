@@ -21,7 +21,6 @@ feature "As a site visitor I want to be able to sign out so that I can destroy m
                               info: { nickname: 'test_twitter_user'},
                               })
      click_on "Sign in with Twitter"
-     save_and_open_page
      page.must_have_content "test_twitter_user, you are signed in!"
     end
   # with help from https://github.com/intridea/omniauth/wiki/Integration-Testing
