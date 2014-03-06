@@ -4,13 +4,5 @@
 
 <a href="http://margaretblue.herokuapp.com">http://margaretblue.herokuapp.com</a>
 
-Flat Design color inspiration:
-http://codepen.io/cobblucas/pen/iGpIf
-
-Creative Link Effect Transitions:
-https://github.com/codrops/CreativeLinkEffects
-
-Inspired by Johann Schroeder:
-http://designmadeonjourney.com/
 
 

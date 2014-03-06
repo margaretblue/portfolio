@@ -4,8 +4,9 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = '1dfeae056350951ac25c16a6c66e0c4c8695aa8a8537dff9f2b81571902a25ad39562e1d7cfec60f21ae9392b036d2e591932feb4bdc32a0cda4f6445a3dc486'
-
+  #put these in an ENVV
+  config.secret_key = ENV["DEVISE_SECRET_KEY"]
+  #config.omniauth :twitter, ENV["TWITTER_CONSUMER_KEY"], ENV["TWITTER_CONSUMER_SECRET"]
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
